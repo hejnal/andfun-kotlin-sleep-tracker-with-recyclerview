@@ -19,11 +19,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.example.android.trackmysleepqualityrecyclerview"
+        applicationId "com.example.android.whejna.trackmysleepqualityrecyclerview"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
@@ -74,5 +75,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
 }
 
